@@ -1,5 +1,5 @@
 final int SQUARESIZE = 100;
-
+Board board;
 abstract class AbstractArea{
   int posX;
   int posY;
@@ -29,7 +29,9 @@ class InfoArea extends AbstractArea{
 
 void setup(){
   surface.setSize(6*SQUARESIZE, 4*SQUARESIZE);
+  board = new Board();
 }
 
 void draw(){
+  board.draw();
 }
